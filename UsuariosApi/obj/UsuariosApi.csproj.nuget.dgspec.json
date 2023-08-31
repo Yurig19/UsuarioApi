@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ygon1\\OneDrive\\Dev\\Projetos\\Back-end\\C#\\UsuariosApi\\UsuariosApi.csproj": {}
+    "C:\\Users\\Ygon1\\OneDrive\\Dev\\Projetos\\Back-end\\C#\\UsuariosAPI\\UsuariosApi\\UsuariosApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ygon1\\OneDrive\\Dev\\Projetos\\Back-end\\C#\\UsuariosApi\\UsuariosApi.csproj": {
+    "C:\\Users\\Ygon1\\OneDrive\\Dev\\Projetos\\Back-end\\C#\\UsuariosAPI\\UsuariosApi\\UsuariosApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ygon1\\OneDrive\\Dev\\Projetos\\Back-end\\C#\\UsuariosApi\\UsuariosApi.csproj",
+        "projectUniqueName": "C:\\Users\\Ygon1\\OneDrive\\Dev\\Projetos\\Back-end\\C#\\UsuariosAPI\\UsuariosApi\\UsuariosApi.csproj",
         "projectName": "UsuariosApi",
-        "projectPath": "C:\\Users\\Ygon1\\OneDrive\\Dev\\Projetos\\Back-end\\C#\\UsuariosApi\\UsuariosApi.csproj",
+        "projectPath": "C:\\Users\\Ygon1\\OneDrive\\Dev\\Projetos\\Back-end\\C#\\UsuariosAPI\\UsuariosApi\\UsuariosApi.csproj",
         "packagesPath": "C:\\Users\\Ygon1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ygon1\\OneDrive\\Dev\\Projetos\\Back-end\\C#\\UsuariosApi\\obj\\",
+        "outputPath": "C:\\Users\\Ygon1\\OneDrive\\Dev\\Projetos\\Back-end\\C#\\UsuariosAPI\\UsuariosApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
