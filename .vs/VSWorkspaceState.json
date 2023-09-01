@@ -1,14 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\UsuariosApi",
-    "\\UsuariosApi\\Controllers",
-    "\\UsuariosApi\\Migrations",
-    "\\UsuariosApi\\obj",
-    "\\UsuariosApi\\obj\\Debug",
-    "\\UsuariosApi\\Profiles",
-    "\\UsuariosApi\\Properties",
-    "\\UsuariosApi\\Service"
+    ""
   ],
   "SelectedNode": "\\UsuariosApi.sln",
   "PreviewInSolutionExplorer": false

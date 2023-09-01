@@ -19,7 +19,7 @@ namespace UsuariosApi.Authorization
             if (birthDate > DateTime.Today.AddYears(-ageUser))
                 ageUser--;
             if (ageUser >= requirement.Age) context.Succeed(requirement);
-
+                
             return Task.CompletedTask;
 
         }

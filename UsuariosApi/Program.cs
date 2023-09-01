@@ -1,6 +1,9 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using UsuariosApi.Authorization;
 using UsuariosApi.Data;
 using UsuariosApi.Models;
@@ -21,21 +24,37 @@ builder.Services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<User
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-builder.Services.AddScoped<RegistrationService>();
-builder.Services.AddScoped<LoginService>();
-builder.Services.AddScoped<TokenService>();
-
-builder.Services.AddAuthorization(options =>
-{
-    options.AddPolicy("MinAge", policy => policy.AddRequirements(new MinAge(18)));
-});
-
 builder.Services.AddSingleton<IAuthorizationHandler, AgeAuthorization>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("dhgdfhfdjokshfhgdhvyfdyy")),
+            ValidateAudience = false,
+            ValidateIssuer = false,
+            ClockSkew = TimeSpan.Zero
+        };
+});
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("MinAge", policy => policy.AddRequirements(new MinAge(18)));
+});
+
+builder.Services.AddScoped<RegistrationService>();
+builder.Services.AddScoped<LoginService>();
+builder.Services.AddScoped<TokenService>();
+
 
 var app = builder.Build();
 

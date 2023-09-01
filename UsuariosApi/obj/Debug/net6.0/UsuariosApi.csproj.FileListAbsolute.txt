@@ -200,3 +200,6 @@ C:\Users\Ygon1\OneDrive\Dev\Projetos\Back-end\C#\UsuariosAPI\UsuariosApi\obj\Deb
 C:\Users\Ygon1\OneDrive\Dev\Projetos\Back-end\C#\UsuariosAPI\UsuariosApi\obj\Debug\net6.0\UsuariosApi.pdb
 C:\Users\Ygon1\OneDrive\Dev\Projetos\Back-end\C#\UsuariosAPI\UsuariosApi\obj\Debug\net6.0\UsuariosApi.genruntimeconfig.cache
 C:\Users\Ygon1\OneDrive\Dev\Projetos\Back-end\C#\UsuariosAPI\UsuariosApi\obj\Debug\net6.0\ref\UsuariosApi.dll
+C:\Users\Ygon1\OneDrive\Dev\Projetos\Back-end\C#\UsuariosAPI\UsuariosApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Ygon1\OneDrive\Dev\Projetos\Back-end\C#\UsuariosAPI\UsuariosApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Ygon1\OneDrive\Dev\Projetos\Back-end\C#\UsuariosAPI\UsuariosApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
